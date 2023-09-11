@@ -15,7 +15,7 @@ Once configured the reporter sends test results to Slack channel, e.g.
 Install this reporter as your test project dependency:
 
 ```bash
-yarn add testcafe-reporter-slack-custom
+yarn add testcafe-reporter-slack-info
 ```
 
 ## Setup instructions
@@ -31,7 +31,7 @@ Add a reporter name (`slack-custom`) to your `reporter` object:
   "src": "scenarios",
   "reporter": [
     {
-      "name": "slack-custom"
+      "name": "slack-info"
     }
   ]
 }
@@ -39,14 +39,14 @@ Add a reporter name (`slack-custom`) to your `reporter` object:
 
 ### Using TestCafe API
 
-Pass the reporter name (`slack-custom`) to the `reporter()` method:
+Pass the reporter name (`slack-info`) to the `reporter()` method:
 
 ```js
 testCafe
     .createRunner()
     .src('path/to/test/file.js')
     .browsers('chrome')
-    .reporter('slack-custom') // <-
+    .reporter('slack-info') // <-
     .run();
 ```
 
@@ -85,7 +85,7 @@ module.exports = {
 
 ```json
 {
-  "name": "slack-custom",
+  "name": "slack-info",
   "options": {
     "webhookUrl": "https://hooks.slack.com/services/*****"
   }
@@ -115,7 +115,7 @@ module.exports = {
 
 ```json
 {
-  "name": "slack-custom",
+  "name": "slack-info",
   "options": {
     "loggingLevel": "SUMMARY"
   }
@@ -144,7 +144,7 @@ module.exports = {
 
 ```json
 {
-  "name": "slack-custom",
+  "name": "slack-info",
   "options": {
     "slowTreshold": 60000
   }
@@ -175,7 +175,7 @@ module.exports = {
 
 ```json
 {
-  "name": "slack-custom",
+  "name": "slack-info",
   "options": {
     "quietMode": true
   }
