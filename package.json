@@ -1,16 +1,16 @@
 {
-  "name": "testcafe-reporter-slack-custom",
-  "version": "1.4.2",
-  "description": "slack-custom TestCafe reporter plugin.",
-  "repository": "https://github.com/zwagner86/testcafe-reporter-slack-custom",
+  "name": "testcafe-reporter-slack-infoe",
+  "version": "2.1.0",
+  "description": "slack-message TestCafe reporter plugin.",
+  "repository": "https://github.com/work88/testcafe-reporter-slack-info",
   "author": {
-    "name": "Zachary Wagner",
-    "email": "wagnerzachary@yahoo.com"
+    "name": "work88",
+    "email": "chen7834aa@gmail.com"
   },
   "contributors": [
     {
-      "name": "Eric van Eldik",
-      "email": "ericvaneldik@gmail.com"
+      "name": "susana",
+      "email": "chen7834aa@gmail.com"
     }
   ],
   "main": "lib/index",

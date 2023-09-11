@@ -44,8 +44,8 @@ module.exports = function() {
             this.userAgents = userAgents;
 
             const startTimeFormatted = this.moment(this.startTime).format('M/D/YYYY h:mm:ss a');
-            const startingMessage = `---- ${emojis.rocket} ${'Starting TestCafe Test Run:'} ${bold(startTimeFormatted)} ----\n`;
-            const startedMessage = `${emojis.rocket} ${'Started TestCafe:'} ${bold(startTimeFormatted)}\n`;
+            const startingMessage = `----  ${'Starting TestCafe Test Run:'} ${bold(startTimeFormatted)} ----\n`;
+            const startedMessage = ` ${'Started TestCafe:'} ${bold(startTimeFormatted)}\n`;
             const ranMessage = `${emojis.computer} Ran ${bold(this.testCount)} test${(this.testCount > 0) ? 's' : ''} in: ${bold(this.userAgents)}\n`;
             const envMessage = (testingEnvironment) ? `${emojis.environment} Test Environment: ${bold(testingEnvironment)}\n` : '';
             const defaultTaskStartMessage = `---- START OF TEST RUN ----\n${startedMessage}${ranMessage}${envMessage}\n`;

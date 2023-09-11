@@ -8,7 +8,8 @@ import {
 import LoggingLevels from './const/LoggingLevels';
 
 const defaultConfig = {
-    webhookUrl: process.env.TESTCAFE_SLACK_WEBHOOK || 'https://hooks.slack.com/services/*****',
+    webhookUrl: process.env.TESTCAFE_SLACK_WEBHOOK || 'https://hooks.slack.com/services/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',
+    channel: process.env.TESTCAFE_SLACK_CHANNEL,
     loggingLevel: process.env.TESTCAFE_SLACK_LOGGING_LEVEL || LoggingLevels.DETAILED,
     quietMode: process.env.TESTCAFE_SLACK_QUIET_MODE || false,
     testingEnvironment: process.env.TESTCAFE_SLACK_TEST_ENV || null,
@@ -35,7 +36,7 @@ const loadReporterConfig = () => {
     try {
         const testCafeConfig = JSON.parse(configRawData);
 
-        return testCafeConfig.reporter.find(obj => obj.name === 'slack-custom');
+        return testCafeConfig.reporter.find(obj => obj.name === 'slack-info');
     } catch (err) {
         return defaultConfig;
     }
