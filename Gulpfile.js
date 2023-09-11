@@ -5,6 +5,7 @@ var mocha   = require('gulp-mocha');
 var del     = require('del');
 
 async function clean(cb) {
+    //remark
     del('lib', cb);
 }
 

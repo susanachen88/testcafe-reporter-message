@@ -1,5 +1,5 @@
 {
-  "name": "testcafe-reporter-slack-infoe",
+  "name": "testcafe-reporter-slack-info",
   "version": "2.1.0",
   "description": "slack-message TestCafe reporter plugin.",
   "repository": "https://github.com/work88/testcafe-reporter-slack-info",

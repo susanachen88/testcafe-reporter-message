@@ -16,7 +16,7 @@ module.exports = function createReport(withColors) {
     plugin.chalk.enabled = !plugin.noColors && withColors;
     plugin.symbols       = {ok: '✓', err: '✖'};
 
-    // NOTE: disable errors coloring if we don't have custom
+    // NOTE: disable errors coloring if we don't have custom code
     // error decorator. Default error colors may be prone to changing.
     if (plugin.chalk.enabled && !pluginFactory().createErrorDecorator) {
         var origFormatError = plugin.formatError;
