@@ -236,3 +236,4 @@ module.exports = {
 
 ## Further Documentation :books:
 [TestCafe Reporter Plugins](https://devexpress.github.io/testcafe/documentation/extending-testcafe/reporter-plugin/)
+# testcafe-reporter-slack-info
