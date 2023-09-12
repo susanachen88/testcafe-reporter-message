@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-message",
-  "version": "1.0.0",
+  "version": "v2.0.0",
   "description": "slack-message TestCafe reporter plugin.",
   "repository": "https://github.com/work88/testcafe-reporter-message",
   "author": {
