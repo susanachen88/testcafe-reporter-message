@@ -1,0 +1,56 @@
+{
+  "name": "testcafe-reporter-message",
+  "version": "1.0.0",
+  "description": "slack-message TestCafe reporter plugin.",
+  "repository": "https://github.com/work88/testcafe-reporter-message",
+  "author": {
+    "name": "work88",
+    "email": "chen7834aa@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "susana",
+      "email": "chen7834aa@gmail.com"
+    }
+  ],
+  "main": "lib/index",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp test",
+    "publish-please": "publish-please",
+    "prepublish": "publish-please guard",
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "keywords": [
+    "testcafe",
+    "reporter",
+    "plugin"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/plugin-transform-runtime": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "callsite-record": "^4.1.4",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-mocha": "^8.0.0",
+    "normalize-newline": "^1.0.2",
+    "publish-please": "^5.5.2",
+    "read-file-relative": "^1.2.0",
+    "testcafe": "^1.19.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.18.2",
+    "@slack/webhook": "^6.1.0",
+    "dotenv": "^16.0.1",
+    "simple-git": "^3.19.1"
+  }
+}
